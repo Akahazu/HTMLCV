@@ -2,65 +2,132 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Profil Saya</title>
+  <title>Profil Diri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      /* Background kiri-kanan pakai gambar */
+      background: url('Background.jpg') repeat-y left top,
+                  url('Background.jpg') repeat-y right top,
+                  #eaeaea; /* fallback warna abu-abu */
+    }
+
+    /* Kontainer utama di tengah */
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+    }
+
+    form input[type="submit"] {
+      width: auto;
+      background: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+
+    form input[type="submit"]:hover {
+      background: #005fa3;
+    }
+
+    p, ul {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Judul -->
-  <h1>Profil Saya</h1>
+  <div class="container">
+    <!-- Judul -->
+    <h1>Profil Saya</h1>
 
-  <!-- Foto + Deskripsi -->
-  <img src="Fotodiri.jpg" alt="Foto Profil" width="150">
-  <p>Halo, nama saya [Nama Kamu]. Saya adalah mahasiswa yang suka belajar hal-hal baru, terutama di bidang teknologi.</p>
+    <!-- Foto + Deskripsi -->
+    <img src="Fotodiri.jpg" alt="Foto Profil" width="150">
+    <p>Halo, nama saya Muhammad Zahran Rizki Primanda. Saya adalah mahasiswa Teknik Informatika ITS yang suka belajar hal-hal baru, terutama di bidang teknologi.</p>
 
-  <!-- Daftar Hobi -->
-  <h2>Hobi</h2>
-  <ul>
-    <li>Membaca</li>
-    <li>Menulis</li>
-    <li>Olahraga</li>
-    <li>Ngoding</li>
-  </ul>
+    <!-- Daftar Hobi -->
+    <h2>Hobi</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>Membaca</li>
+      <li>Fotografi</li>
+      <li>Mendengarkan lagu</li>
+      <li>Main game</li>
+    </ul>
 
-  <!-- Tabel Riwayat Pendidikan -->
-  <h2>Riwayat Pendidikan</h2>
-  <table border="1" cellpadding="5" cellspacing="0">
-    <tr>
-      <th>Tahun</th>
-      <th>Institusi</th>
-      <th>Keterangan</th>
-    </tr>
-    <tr>
-      <td>2015 - 2018</td>
-      <td>SMA Contoh</td>
-      <td>Jurusan IPA</td>
-    </tr>
-    <tr>
-      <td>2018 - 2022</td>
-      <td>Universitas Contoh</td>
-      <td>Sarjana Ilmu Komputer</td>
-    </tr>
-  </table>
+    <!-- Tabel Riwayat Pendidikan -->
+    <h2>Riwayat Pendidikan</h2>
+    <table>
+      <tr>
+        <th>Tahun</th>
+        <th>Institusi</th>
+        <th>Keterangan</th>
+      </tr>
+      <tr>
+        <td>2021 - 2024</td>
+        <td>MAN 1 Kota Tangerang Selatan</td>
+        <td>Jurusan IPA</td>
+      </tr>
+      <tr>
+        <td>2024 - 2028 (Aamiin)</td>
+        <td>Institut Teknologi Sepuluh Nopember</td>
+        <td>Sarjana Ilmu Komputer</td>
+      </tr>
+    </table>
 
-  <!-- Form Kontak -->
-  <h2>Kontak</h2>
-  <form action="mailto:emailkamu@example.com" method="post" enctype="text/plain">
-    Nama: <br>
-    <input type="text" name="nama"><br><br>
-    Email: <br>
-    <input type="email" name="email"><br><br>
-    Pesan: <br>
-    <textarea name="pesan" rows="5" cols="30"></textarea><br><br>
-    <input type="submit" value="Kirim">
-  </form>
+    <!-- Form Kontak -->
+    <h2>Kontak</h2>
+    <form action="mzahranrizkiprimanda@gmail.com" method="post" enctype="text/plain">
+      Nama: <br>
+      <input type="text" name="nama"><br>
+      Email: <br>
+      <input type="email" name="email"><br>
+      Pesan: <br>
+      <textarea name="pesan" rows="5" cols="30"></textarea><br>
+      <input type="submit" value="Kirim">
+    </form>
 
-  <!-- Link Sosial Media -->
-  <h2>Media Sosial</h2>
-  <p>
-    <a href="https://facebook.com/username" target="_blank">Facebook</a> |
-    <a href="https://twitter.com/username" target="_blank">Twitter</a> |
-    <a href="https://instagram.com/username" target="_blank">Instagram</a>
-  </p>
+    <!-- Link Sosial Media -->
+    <h2>Media Sosial</h2>
+    <p>
+      <a href="https://instagram.com/razhelionn" target="_blank">Instagram</a>
+    </p>
+  </div>
 
 </body>
 </html>
