@@ -9,38 +9,31 @@
       font-family: Arial, sans-serif;
       background: url('Background.jpg') repeat-y left top,
                   url('Background.jpg') repeat-y right top,
-                  #eaeaea; 
+                  #eaeaea;
     }
 
     .container {
       max-width: 800px;
       margin: 20px auto;
-      background: url('Background2.jpg') center/cover no-repeat, white;
+      background: url('Background2.jpg'); 
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center; 
     }
 
     h1, h2 {
-      text-align: center;
+      margin-top: 0;
     }
 
     img {
       display: block;
       margin: 0 auto 15px auto;
-    }
-
-    p, ul {
-      text-align: left;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
+      border-radius: 8px;
     }
 
     table {
-      width: 70%;
+      width: 80%;
       margin: 10px auto;
       border-collapse: collapse;
     }
@@ -48,19 +41,18 @@
     table, th, td {
       border: 1px solid #333;
       padding: 8px;
-      text-align: center;
     }
 
     form {
-      width: 60%;
-      margin: 15px auto;
-      text-align: center;
+      margin-top: 10px;
     }
 
     form input, form textarea {
-      width: 90%;
-      padding: 6px;
-      margin: 6px 0;
+      width: 60%;
+      max-width: 300px;
+      padding: 8px;
+      margin: 6px auto;
+      display: block;
     }
 
     form input[type="submit"] {
@@ -69,7 +61,7 @@
       color: white;
       border: none;
       cursor: pointer;
-      padding: 8px 15px;
+      padding: 10px 15px;
       border-radius: 4px;
     }
 
@@ -77,8 +69,9 @@
       background: #005fa3;
     }
 
-    .sosmed {
-      text-align: left;
+    ul {
+      list-style: none;
+      padding: 0;
     }
   </style>
 </head>
@@ -118,23 +111,23 @@
       <tr>
         <td>2024 - 2028 (Aamiin)</td>
         <td>Institut Teknologi Sepuluh Nopember</td>
-        <td>Teknik Informatika</td>
+        <td>Sarjana Ilmu Komputer</td>
       </tr>
     </table>
 
     <!-- Kontak -->
     <h2>Kontak</h2>
     <form action="mailto:mzahranrizkiprimanda@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nama" placeholder="Nama"><br>
-      <input type="email" name="email" placeholder="Email"><br>
-      <textarea name="pesan" rows="5" placeholder="Pesan"></textarea><br>
+      <input type="text" name="nama" placeholder="Nama">
+      <input type="email" name="email" placeholder="Email">
+      <textarea name="pesan" rows="5" placeholder="Pesan"></textarea>
       <input type="submit" value="Kirim">
     </form>
 
     <!-- Link Sosmed -->
     <h2>Media Sosial</h2>
-    <p class="sosmed">
-      <a href="https://instagram.com/razhelionn" target="_blank">Instagram</a>
+    <p>
+      <a href="https://instagram.com/razhelionn" target="_blank">Instagram Saya</a>
     </p>
   </div>
 
