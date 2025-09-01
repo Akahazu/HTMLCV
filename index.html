@@ -7,17 +7,15 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      /* Background kiri-kanan pakai gambar */
       background: url('Background.jpg') repeat-y left top,
                   url('Background.jpg') repeat-y right top,
-                  #eaeaea; /* fallback warna abu-abu */
+                  #eaeaea; 
     }
 
-    /* Kontainer utama di tengah */
     .container {
       max-width: 800px;
       margin: 20px auto;
-      background: 'Background2.jpg';
+      background: url('Background2.jpg') center/cover no-repeat, white;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -32,24 +30,36 @@
       margin: 0 auto 15px auto;
     }
 
+    p, ul {
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
     table {
-      width: 100%;
+      width: 70%;
+      margin: 10px auto;
       border-collapse: collapse;
-      margin: 10px 0;
     }
 
     table, th, td {
       border: 1px solid #333;
       padding: 8px;
+      text-align: center;
     }
 
     form {
-      margin-top: 10px;
+      width: 60%;
+      margin: 15px auto;
+      text-align: center;
     }
 
     form input, form textarea {
-      width: 80%;
-      padding: 8px;
+      width: 90%;
+      padding: 6px;
       margin: 6px 0;
     }
 
@@ -59,15 +69,16 @@
       color: white;
       border: none;
       cursor: pointer;
-      padding: 10px 15px;
+      padding: 8px 15px;
+      border-radius: 4px;
     }
 
     form input[type="submit"]:hover {
       background: #005fa3;
     }
 
-    p, ul {
-      text-align: center;
+    .sosmed {
+      text-align: left;
     }
   </style>
 </head>
@@ -80,11 +91,11 @@
     <!-- Foto -->
     <img src="Fotodiri.jpg" alt="Foto Profil" width="150">
     <p>Halo, nama saya Muhammad Zahran Rizki Primanda. Saya adalah mahasiswa Teknik Informatika ITS yang suka belajar hal-hal baru mengenai bidang teknologi. 
-      Saya selalu berusaha untuk menambah pemahaman dan kemampaun saya di bidang yang saya tekuni. </p>
+      Saya selalu berusaha untuk menambah pemahaman dan kemampuan saya di bidang yang saya tekuni. </p>
 
     <!-- Hobi -->
     <h2>Hobi</h2>
-    <ul style="list-style: none; padding: 0;">
+    <ul>
       <li>Membaca</li>
       <li>Fotografi</li>
       <li>Mendengarkan lagu</li>
@@ -107,25 +118,22 @@
       <tr>
         <td>2024 - 2028 (Aamiin)</td>
         <td>Institut Teknologi Sepuluh Nopember</td>
-        <td>Sarjana Ilmu Komputer</td>
+        <td>Teknik Informatika</td>
       </tr>
     </table>
 
     <!-- Kontak -->
     <h2>Kontak</h2>
-    <form action="mzahranrizkiprimanda@gmail.com" method="post" enctype="text/plain">
-      Nama: <br>
-      <input type="text" name="nama"><br>
-      Email: <br>
-      <input type="email" name="email"><br>
-      Pesan: <br>
-      <textarea name="pesan" rows="5" cols="30"></textarea><br>
+    <form action="mailto:mzahranrizkiprimanda@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nama" placeholder="Nama"><br>
+      <input type="email" name="email" placeholder="Email"><br>
+      <textarea name="pesan" rows="5" placeholder="Pesan"></textarea><br>
       <input type="submit" value="Kirim">
     </form>
 
     <!-- Link Sosmed -->
     <h2>Media Sosial</h2>
-    <p>
+    <p class="sosmed">
       <a href="https://instagram.com/razhelionn" target="_blank">Instagram</a>
     </p>
   </div>
